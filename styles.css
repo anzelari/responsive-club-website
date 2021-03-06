@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+.project {
+    color: red;
+    background-color: bisque;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid gray;
+    margin: 0 auto;
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .project {
+        font-size: 1.5rem;
+        height: auto;
+        margin-bottom: 0;
+    }
+}
+ /*header and navigation*/
+ 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+.logo {
+    font-family: Playball, "Times New Roman", serif;
+    font-size: 3rem;
+    color: rgb(156, 230, 46);
+    font-weight: bold;
+    padding-left: 20px;  
+}  
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 2px 20px;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    background-color: rgb(52, 59, 52);
+    color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+       justify-content: center;
+       margin-top: 0; 
+    }
+    nav ul li {
+        display: none;        
+    }   
+}
+
+/*banner*/
+
+.banner {
+    display: flex;
+    height: 400px;
+    background-image: url('./images/ozero2.jpg');
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+    align-content: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color:rgb(152, 179, 103);
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .banner {
+        height: 200px;
+        color: white;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }   
+}
+
+/*line with headings*/
+.para {
+    background-color: rgb(156, 230, 46);
+    text-align: center;
+}
+
+/*events and activities*/
+.events {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.event {
+    width: 30%;
+    min-width: 350px;
+    border: 2px solid rgb(153, 179, 153);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.event h3 {
+    color: rgb(255, 123, 0);
+}
+.event img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    border: 2px solid rgb(153, 179, 153);
+    border-radius: 15px;
+    background-color: rgb(201, 214, 177);
+    color: black;
+}
+
+@media only screen and (max-width: 650px) {
+    .event {
+        width: 100%;
+        color:rgb(52, 59, 52)
+    }
+    .event img {
+        width: 100%;
+    }
+}
+
+/*green line with the quote (or Info about the club) */
+.about {
+    background-color: rgb(36, 92, 41);
+    color: white;
+    text-align: center;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 15px 0;
+   
+   
+}
+/*Gallery or Stories*/
+.stories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.story {
+    width: 400px;
+    min-width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .story {
+        width: 100%;
+        margin-bottom: 5px;   
+    }
+}
+
+/*footer*/
+footer {
+    height: 60px;
+    margin-top: 20px;
+    background-color: rgb(52, 59, 52);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
